@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: poppins;
+}
+
+
+
+.header {
+  height: 10vh;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgb(252, 228, 12);
+  /* opacity: 0.5; */
+
+}
+
+
+.logo {
+  height: 50%;
+}
+
+
+
+
+.nav {
+  border: 2px solid rgb(64, 15, 243);
+  display: flex;
+  flex-direction: row;
+
+}
+
+#closeBtn,#hamburger {
+  display: none;
+
+}
+.off{
+  display: none;
+}
+
+.on{
+  display: block;
+}
+
+
+.openedNav {
+  border: 2px solid rgb(2, 150, 59);
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  /* padding: 3% 6%; */
+}
+
+
+.a {
+  text-decoration: none;
+  border: 2px solid black;
+  display: block;
+  padding: 1rem 1rem;
+}
+
+
+
+
+
+
+#home {
+  height: 100vh;
+  background-color: rgb(121, 121, 245);
+}
+
+
+.main-home {
+  height: 100vh;
+  border: 2px solid rgb(167, 123, 4);
+}
+
+
+#about {
+  height: 100vh;
+  border: 2px solid rgb(214, 13, 221);
+  background-color: rgb(228, 14, 14);
+
+
+}
+
+.total-about {
+  border: 2px solid rgb(13, 197, 221);
+  background-color: rgb(20, 94, 253);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8rem;
+}
+
+
+.main-about {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
+  gap: 2rem;
+  width: 90%;
+
+}
+
+
+#portfolio {
+  height: 100vh;
+  border: 2px solid rgb(214, 13, 221);
+  background-color: rgb(116, 103, 103);
+}
+
+
+.total-portfolio {
+  border: 2px solid rgb(13, 197, 221);
+  background-color: rgb(20, 253, 20);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8rem;
+}
+
+
+.main-portfolio {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
+  gap: 2rem;
+  width: 90%;
+
+}
+
+
+#contact {
+  height: 100vh;
+  border: 2px solid rgb(214, 13, 221);
+  background-color: rgb(179, 179, 179);
+
+
+}
+
+.total-contact {
+  border: 2px solid rgb(214, 13, 221);
+  background-color: rgb(179, 179, 179);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 8rem;
+}
+
+.main-contact {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2rem;
+  gap: 2rem;
+  width: 90%;
+
+}
+
+.card {
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2rem;
+  gap: 2rem;
+  padding: 2% 2%;
+  width: 30%;
+  position: relative;
+  overflow: hidden;
+
+}
+
+.child-card {
+  border: 2px solid black;
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -10rem;
+  transition: bottom 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card:hover .child-card {
+  bottom: 0rem;
+}
+
+.active {
+  background-color: blueviolet;
+}
+
+
+
+@media(max-width:758px){
+  #closeBtn,#hamburger{
+  display: block;
+  border: 4px solid green;
+  }
+
+
+  #hamburger{
+    margin-right: 4rem;
+  }
+
+
+  .logo{
+    margin-left: 4rem;
+  }
+
+  #closeBtn{
+    margin-top: 20px;
+    }
+
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+
+
+ .nav{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100vh;
+  right: -20rem;
+  top: 0;
+  width: 200px;
+  background-color: rgb(247, 223, 223);
+  transition: all 200ms;
+ }
+
+
+ .openedNav{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  gap: 2rem;
+  right: 2rem;
+  top:6rem;
+  padding: 4% 4%;
+
+ }
+
+
+
+
+}
